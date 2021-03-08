@@ -27,7 +27,19 @@ somma = numero + random;
 console.log(somma);
 
 // 6. Stabilisco se la somma dei due numeri è pari o dispari
-if (pariDispari == "pari" && somma % 2 == 0) {
+function isEven(numero){
+  if (numero % 2 == 0) {
+    return "pari";
+  } else {
+    return "dispari";
+  }
+}
+
+var risultato = isEven(somma);
+console.log(risultato);
+
+// 7. Se è pari stampo "Hai vinto" altrimenti "Hai perso"
+if (pariDispari == risultato) {
   console.log("Hai vinto");
 } else {
   console.log("Hai perso");
