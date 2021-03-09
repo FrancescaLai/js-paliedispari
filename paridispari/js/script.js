@@ -13,7 +13,7 @@ console.log(pariDispari);
 var numero = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log(numero);
 
-// 3. Generiamo un numero random per il computer
+// 3. Generiamo un numero random per il computer con una  funzione
 function getRandomNum (min, max) {
   return Math.floor(Math.random()*(max - min + 1)+ min);
 }
